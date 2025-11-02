@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hora Último Click</title>
+</head>
+<body>
+  <h3>Hora del último click:</h3>
+  <p id="horaClick">Aún no se ha hecho clic</p>
+
+  <script>
+    document.addEventListener("click", () => {
+      const ahora = new Date();
+      const horas = ahora.getHours().toString().padStart(2, "0");
+      const minutos = ahora.getMinutes().toString().padStart(2, "0");
+      const segundos = ahora.getSeconds().toString().padStart(2, "0");
+      const horaFormateada = `${horas}:${minutos}:${segundos}`;
+      document.getElementById("horaClick").textContent = "Último clic a las " + horaFormateada;
+    });
+  </script>
+</body>
+</html>
