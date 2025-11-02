@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clicks</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Contador de Clicks. Grupo: [Vuestros nombres]</h1>
+    <p class="grupo">Mateo Quintero, Hernan Valderrama, Ricardo Mauricio y Angel Sanamrtin</p>
+    
+    <div class="contador-display">
+        <p>Número de clicks</p>
+        <div class="contador-numero" id="contador">0</div>
+    </div>
+
+    <button class="btn-contar" onclick="contarClick()">Click Aquí</button>
+
+    <script>
+        // Variable global para almacenar el número de clicks
+        let numeroClicks = 0;
+
+        // Función para contar clicks
+        function contarClick() {
+            numeroClicks++;
+            document.getElementById('contador').textContent = numeroClicks;
+        }
+    </script>
+
+
+<button id="reset">Reiniciar</button>
+<script>
+  document.getElementById("reset").addEventListener("click", () => {
+    contador = 0;
+    document.getElementById("contador").innerText = contador;
+  });
+</script>
+
+</body>
+
+</html>
