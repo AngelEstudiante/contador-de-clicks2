@@ -1,0 +1,79 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #1a2b4d;
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+}
+
+.grupo {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.contador-display {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+  width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.contador-display p {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #666;
+  font-weight: 500;
+}
+
+.contador-numero {
+  font-size: 5em;
+  font-weight: bold;
+  color: #007bff;
+  line-height: 1;
+}
+
+.btn-contar,
+#reset {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-contar {
+  background-color: #007bff;
+}
+
+.btn-contar:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#reset {
+  background-color: #dc3545;
+  margin-left: 0.5rem;
+}
+
+#reset:hover {
+  background-color: #a71d2a;
+  transform: translateY(-2px);
+}
